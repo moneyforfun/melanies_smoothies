@@ -10,12 +10,12 @@ st.write(
   """
 )
 
-session = get_active_session()
+
 myname = st.text_input('Please provide your name below:')
 st.write(f'"{myname}" will be displayed on your order')
 
 
-
+session = get_active_session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
 

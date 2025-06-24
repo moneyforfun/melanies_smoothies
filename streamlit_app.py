@@ -10,7 +10,7 @@ st.write(
   """
 )
 
-session = get_active_session()
+
 myname = st.text_input('Please provide your name below:')
 st.write(f'"{myname}" will be displayed on your order')
 

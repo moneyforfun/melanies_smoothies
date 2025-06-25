@@ -20,7 +20,8 @@ connection_parameters = {
     "schema": st.secrets["snowflake"]["schema"]
   )
 
-session = Session.builder.configs(connection_parameters).create
+session = Session.builder.configs(connection_parameters).create()
+
 myname = st.text_input('Please provide your name below:')
 st.write(f'"{myname}" will be displayed on your order')
 

@@ -18,7 +18,7 @@ connection_parameters = {
     "warehouse": st.secrets["snowflake"]["warehouse"],
     "database": st.secrets["snowflake"]["database"],
     "schema": st.secrets["snowflake"]["schema"]
-  )
+}
 
 session = Session.builder.configs(connection_parameters).create()
 
